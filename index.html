@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCE Supaul</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1><center>Supaul College of Engineering, Supaul</center></h1>
+    <hr> <br>
+    <marquee> iHub DivyaSampark Training in SCE, Supaul </marquee><br> 
+    
+    <div class="div nav">
+        <ul>
+            <li>Home</li>
+            <li>Academic</li>
+            <li>Clubs</li>
+            <li>Our Alumini</li>
+            <li>Login</li>
+            <li>About us</li>
+        </ul>
+    </div>
+<br> 
+    <div class="sce-image">
+        <img><a href="https://www.scesupaul.org" target="_blank" style="text-decoration:none" onclick="redirect()">
+            Supaul College of Engineering </a><br> 
+    </div>
+<br>
+
+    <div class="about">
+        <p class="heading">Supaul College Engineering</p>
+        <div class="about-detail">
+            <p>Supaul College of Engineering (SCE) is one of the new Government
+                Engineering College established by the Government of Bihar under 
+                the Department of Science and Technology. It will start its first 
+                academic session 2017 from campus of Government Polytechnic, Raghopur, 
+                Supal. The new engineering college will have four engineering branches - 
+                Civil with an intake 90, Mechanical with an intake 60, Electrical with an 
+                intake 60,, Electronics & Communication with an intake 60, Computer Science 
+                Engineering with an intake 30, and Computer Science & Engineering (Artificial 
+                Intelligence) with an intake of 60 per and 360 students in total. </p>
+            <p>SCE is one of the new government technical institution establish 2017 Supaul, 
+                Bihar. The College is afiliated to Bihar Engineering University (BEU), Patna.
+                before that it was afiliated to Aryabhatta Knowledge University(AKU), Patna. 
+                which was established by the government of Bihar, under Bihar Act 24, 2008. 
+                The institute offers full-time Bachelor of Technology (B.Tech) 
+                degree programs.</p>
+        </div>
+    </div>
+    <div class="center">
+        <div class="center loginpage"><br>
+            <h3>Faculty Login </h3>
+         <form>
+             <input type="text" placeholder="faculty id.">
+             <input type="password" placeholder="Password">
+             <input class="button" type="button" value="Log In" onclick="login()"/><br>
+             <p onclick="msg()">Forgotten Password?</p><br>
+         </form>
+        </div>
+        <br><br>
+        <div class="center loginpage"><br>
+           <h3> Student Login </h3>
+        <form>
+            <input type="text" placeholder="Registration No.">
+            <input type="password" placeholder="Password">
+            <input class="button" type="button" value="Log In" onclick="login()"/><br>
+            <p onclick="msg()">Forgotten Password?</p><br>
+        </form>
+    </div>
+    <br><br></div>
+
+    <br><br><br>
+    <div class="second">
+        <div class="iframe-side">
+            <p class="iframeA"> This is iframe👇 </p> <br>
+            <iframe class="iframe" src="./registration.html" >
+                Browser doesn't Support iframe.
+                </iframe>
+        </div> <br> <br>
+        <div class="multimedia">
+            <div class="audio">
+                <h2> Injecting Audio File </h2>
+                    <audio controls  muted>
+                    <source src="./media/audio1.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                    </audio> <br>
+            </div><br><br>
+            <div class="video">
+                <h2> Injecting Video File </h2>
+                    SCE View from East Side <br>
+                    <video class="video2" controls>
+                    <source src="./media/video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+        </div>
+    </div>
+    <p class="gallery">Video Gallery</p>
+    <div class="multimedia1"> 
+    <div>
+        <p class="p1">Campus of SCE</p>
+        <video class="video1" controls>
+            <source src="./media/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div> <br>
+    <div>
+        <p class="p1">Night View of SCE (Drone Capture)</p>
+        <video class="video1" controls>
+            <source src="./media/video3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+    <br> <p class="p1" style="margin-left: 100px">Republic Day 2023 Speech</p>
+    <div class="gallery2">
+    <div class="myVideo">
+        <video id="myVideo">
+            <source id="mp4_src" src="./media/video4.mp4" type="video/mp4" >
+            Your browser does not support the video tag.
+          </video>
+          <p>Click the buttons to play or pause the video.</p>
+          <button onclick="playVid()" type="button">Play Video</button>
+          <button onclick="pauseVid()" type="button">Pause Video</button> 
+          <script>
+            var x = document.getElementById("myVideo"); 
+            function playVid() { 
+              x.play(); 
+            } 
+            function pauseVid() { 
+              x.pause(); 
+            } 
+            </script>
+    </div>
+    <div class="myVideo1">
+        <video id="myVideo1">
+            <source id="mp4_src" src="./media/video5.mp4" type="video/mp4" >
+            Your browser does not support the video tag.
+          </video>
+          <p>Click the buttons to play or pause the video.</p>
+          <button onclick="playVid1()" type="button">Play Video</button>
+          <button onclick="pauseVid1()" type="button">Pause Video</button> 
+          <script>
+            var y = document.getElementById("myVideo1"); 
+            function playVid1() { 
+              y.play(); 
+            } 
+            function pauseVid1() { 
+              y.pause(); 
+            } 
+            </script>
+    </div>
+    <div class="myVideo2">
+        <video id="myVideo2">
+            <source id="mp4_src" src="./media/video6.mp4" type="video/mp4" >
+            Your browser does not support the video tag.
+          </video>
+          <p>Click the buttons to play or pause the video.</p>
+          <button onclick="playVid2()" type="button">Play Video</button>
+          <button onclick="pauseVid2()" type="button">Pause Video</button> 
+          <script>
+            var z = document.getElementById("myVideo2"); 
+            function playVid2() { 
+              z.play(); 
+            } 
+            function pauseVid2() { 
+              z.pause(); 
+            } 
+            </script>
+    </div>
+</div>
+
+<br>
+</body>
+</html>

@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #67379425;
+}
+h1{
+    color: rgb(8, 8, 91);
+}
+marquee{
+    background-color: #e5d7d9;
+    color: green;
+    width: 100%;
+}
+.sce-image{
+    background-image: url("./media/sce.jpg");
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+/* navigation section */
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(189, 21, 24, 0.15);
+    border: 3px solid rgb(7, 7, 213);
+    height: 40px;
+}
+.nav ul li{
+    display: flex;
+    text-decoration: none;
+}
+.nav ul li:hover{
+    border: 2px solid green;
+    cursor: pointer;
+    color:rgb(221, 22, 22)
+}
+form p{
+    color:red;
+    cursor:pointer;
+}
+.center h3{
+    color: blue;
+    text-emphasis-style:inherit ;
+}
+
+/* login section */
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.loginpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(231, 236, 231);
+    width: 396px;
+    height: 330px;
+    box-shadow: -3px 3px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-left: 8%;
+}
+.loginpage form{       
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    border: #0000;
+}
+input{
+    width: 350px;
+    height: 52px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.button{
+    width: 370px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(162, 171, 197);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}    
+
+/* about section */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    border: 2px solid rgba(10, 18, 237, 0.813);
+    border-radius: 10px ;
+    margin: 2% 15%;
+    background-color: rgba(227, 215, 250, 0.347);
+}
+.about-detail{
+    padding: 1%;
+    font-style: italic;
+    font-weight: 500;
+    font-size: large;
+}
+.heading{
+    color: #d51010;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0;
+    text-decoration: dashed underline;
+}
+/* multimedia setion */
+.second{
+    margin: 0% 5% 2% 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: 2px solid #76f237;
+    padding: 1%;
+    height: fit-content;
+}
+
+.iframeA{
+    margin-left: 5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #d51010;
+}
+.iframe{
+    height: 470px;
+    width: 550px;
+    background-image: url(./media/register.jpg);
+}
+.multimedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0% 5% 5% 5%;
+    border: 1px solid rgb(243, 135, 153);
+    padding: 2%;
+}
+.multimedia1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0.5% 3%;
+}
+.video2{
+    width: 500px;
+    height: auto;
+ }
+ .video1{
+    border-radius: 20px;
+    width:600px;
+    height: auto;
+ }
+ .p1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 900;
+    color:rgb(92, 5, 5);
+    margin-left: 15px;
+ }
+ .gallery{
+    display: block;
+    block-size: fit-content;
+    margin: 0% 46%;
+    border: 2px solid rgb(53, 134, 53);
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 800;
+}
+#myVideo, #myVideo1, #myVideo2{
+    height: auto;
+    width: 400px;
+}
+.gallery2{
+    padding:0% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* Media query */
+/* for small pc */
+@media(max-width:1024px){
+    .second{
+        display: grid;
+        grid-row: inherit;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #76f237;
+    }
+    .multimedia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .multimedia1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sce-image{
+        background-image: url("./media/sce2.jpg");
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+    }
+    #myVideo, #myVideo1, #myVideo2{
+        height: auto;
+        width: 300px;
+    }
+    
+}
+/* for tablet */
+@media(max-width:815px) {
+    .loginpage{
+        width: 280px;
+        margin-left: 4%;
+    }
+    input{
+        width: 240px;
+    }
+    .button{
+        width: 230px;
+    }    
+    .sce-image{
+        background-image: url("./media/sce3.jpg");
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+    }
+    #myVideo, #myVideo1, #myVideo2{
+        height: auto;
+        width: 230px;
+    }
+}
+
+/* for mobile */
+@media(max-width:530px) {
+    h1{
+        font-size: 20px;
+        color: rgb(8, 8, 91);
+    }
+    marquee{
+        text-decoration: none;
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        height:max-content;
+    }
+    .center{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+    .about{
+        margin-bottom: 10%; 
+    }
+    .heading{
+        font-size: 23px;
+    }
+    .about-detail{
+        padding: 2%;
+        font-style: italic;
+        font-weight: 300;
+        font-size: medium;
+    }
+    .iframe{
+        height: 470px;
+        width: 300px;
+    }
+    .video2{
+        padding: 2%;
+        width: 250px;
+     }
+    audio{
+        padding: 2%;
+        width: 250px;
+     }
+     
+     .video1{
+        width:300px;
+     }
+     .sce-image{
+        background-image: url("./media/sce4.jpg");
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .gallery2{
+        padding:0% 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #myVideo, #myVideo1, #myVideo2{
+        height: auto;
+        width: 300px;
+    }
+}
+
+

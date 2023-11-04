@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>Registration Form</title> 
+<style>
+    *{
+        margin:2%;
+    }
+    body{
+        background-image: url("./register.jpg");
+        background-attachment: fixed;
+        color:rgb(25, 0, 255);
+        font-size: large;
+        font-weight: 600;
+    }
+    .submit{
+        display: flex;
+        margin: 0% 35%;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100px;
+        border: 3px solid blue;
+        border-radius: 10px;
+    }
+    
+</style>
+</head> 
+<body> 
+<form method="post"action="none"> 
+<fieldset> <!--Main Heading--> 
+<legend>CLUB REGISTRATION FORM</legend> 
+<!--divs for User Details--> 
+<div> 
+<label for="fname">First Name</label> <br> 
+<input type="text"id="fname"required> 
+</div> 
+<div> 
+ <label for="lname">Last Name</label> <br> 
+<input type="text"id="lname"> 
+</div> 
+<div> 
+<p>Gender</p> 
+<input type="radio"name="gender"value="male">Male<br> 
+<input type="radio"name="gender"value="female">Female<br> 
+<input type="radio"name="gender"value="other">Other 
+</div> 
+<div> <br> <label for="mail">Email</label> <br> 
+<input type="email"id="mail"required placeholder="abc@gmail.com"><br>
+<br> <label for="mobile">Mobile No.</label> <br> 
+<input type="mobile"id="mobile"required placeholder="+91-1111111111"> 
+</div> 
+<div> <br> <textarea placeholder="Tell us about yourself..."rows="4" cols="30"></textarea> 
+</div> </fieldset> <br> <!--Submit button--> 
+<input class="submit"  type="submit"autofocus> </form> </body> </html> 
